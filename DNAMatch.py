@@ -62,6 +62,7 @@ def dna_match_bottomup(DNA1, DNA2):
             else:
                 # No match
                 dp_table[i][j] = max(dp_table)
+    return dp_table[m][n]
 
 
 
