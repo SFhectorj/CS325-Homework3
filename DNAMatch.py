@@ -34,6 +34,7 @@ def dna_match_topdown(DNA1, DNA2):
 
         return memo_table[(i, j)]
 
+    # use the helper function
     return dna_matching(len(DNA1), len(DNA2))
 
 
