@@ -10,6 +10,10 @@ def dna_match_topdown(DNA1, DNA2):
     memo_table = {}
 
     def dna_matching(i, j):
+        """
+        This helper function will check the sequences for a match and will store
+        the appropriate matches in the table.
+        """
 
         # Basecase: An empty string will not match anything
         if i == 0 or j == 0:
@@ -25,6 +29,12 @@ def dna_match_topdown(DNA1, DNA2):
             # Recursively solve sub problems then store in memo_table.
             memo_table[(i, j)] = 1 + dna_matching(i - 1, j - 1)
         else:
+            # Take the maximum of both possibilities
+            memo_table[(i, j)] = max(dna_matching(i - 1, j), dna_matching(i, j - 1))
+
+        return memo_table[(i, j)]
+
+    return dna_matching(len(DNA1), len(DNA2))
 
 
 
