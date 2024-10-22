@@ -46,6 +46,12 @@ def dna_match_bottomup(DNA1, DNA2):
     find similarities between two sequences.
     """
     # We need the length of the sequences stored in variables
+    m = len(DNA1)
+    n = len(DNA2)
+
+    # Sets up a 2D table with dimensions of (m+1) x (n+1).
+    # The table is initialized to 0.
+    dp_table =
 
 
 
