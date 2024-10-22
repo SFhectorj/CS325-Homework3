@@ -22,6 +22,7 @@ def dna_match_topdown(DNA1, DNA2):
 
         # Matching: When the characters match, let them be stored.
         if DNA1[i - 1] == DNA2[j - 1]:
+            # Recursively solve sub problems then store in memo_table.
             memo_table[(i, j)] = 1 + dna_matching(i - 1, j - 1)
         else:
 
