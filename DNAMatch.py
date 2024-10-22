@@ -38,5 +38,16 @@ def dna_match_topdown(DNA1, DNA2):
     return dna_matching(len(DNA1), len(DNA2))
 
 
+# Question 1B
+# BOTTOM-UP Approach
+def dna_match_bottomup(DNA1, DNA2):
+    """
+    This function uses a bottom up approach of dynamic programming to
+    find similarities between two sequences.
+    """
+    # We need the length of the sequences stored in variables
+
+
+
 
 
