@@ -15,7 +15,12 @@ def dna_match_topdown(DNA1, DNA2):
         if i == 0 or j == 0:
             return 0
 
-        # 
+        # Check for dupes
+        if (i, j) in memo_table:
+            # Returns the values already obtained for i and j.
+            return memo_table[(i, j)]
 
+        # Matching: When the characters match, let them be stored.
+        if DNA1[i - 1] ==
 
 
