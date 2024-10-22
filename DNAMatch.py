@@ -15,5 +15,7 @@ def dna_match_topdown(DNA1, DNA2):
         if i == 0 or j == 0:
             return 0
 
+        # 
+
 
 
