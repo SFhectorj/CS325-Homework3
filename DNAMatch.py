@@ -51,7 +51,10 @@ def dna_match_bottomup(DNA1, DNA2):
 
     # Sets up a 2D table with dimensions of (m+1) x (n+1).
     # The table is initialized to 0.
-    dp_table =
+    dp_table = [[0] * (n + 1) for k in range(m + 1)]
+
+    for i in range(1, m + 1):
+        for j in range(1, n + 1):
 
 
 
